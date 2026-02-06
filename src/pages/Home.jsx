@@ -7,41 +7,55 @@ export default function Home() {
   const projects = [
     {
       title: "KeepIt",
-      description: "Aplicación de Android para deslizar fotos (swipe) y decidir si mantenerlas o eliminarlas, ayudando a liberar espacio de almacenamiento de manera divertida.",
+      description: "Aplicación Android enfocada en la gestión de fotos, utilizando gestos tipo swipe para decidir de forma rápida qué imágenes conservar o eliminar, optimizando el espacio de almacenamiento.",
       url: "https://github.com/0xlibless/KeepIt",
       tags: [
         { name: "JavaScript", color: "#fbd719" }, 
         { name: "Android", color: "#3DDC84" },   
         { name: "React Native", color: "#61dafb" }
-      ]
+      ],
+      icon: "github"
     },
     {
       title: "Chatty.cpp",
-      description: "Una app de Android para inferencia de modelos LLM locales, escrita en JavaScript. LLMs privados y rápidos en tu dispositivo.",
+      description: "Aplicación Android para inferencia de modelos LLM locales, escrita en JavaScript. Pensado para gente mayor de poco conocimiento técnico.",
       url: "https://github.com/0xlibless/Chatty.cpp",
       tags: [
         { name: "JavaScript", color: "#fbd719" },
         { name: "AI", color: "#ff66cc" },
         { name: "Android", color: "#3DDC84" },   
-      ]
+      ],
+      icon: "github"
     },
     {
       title: "ProxyScrapper",
-      description: "Script para extraer proxies utiles a partir de repositorios abiertos en Github",
+      description: "Automatización en Python para recolectar y validar proxies desde fuentes públicas.",
       url: "https://github.com/0xlibless/FreeProxyScraper",
       tags: [
         { name: "Python", color: "#3776ab" }, 
         { name: "OSINT", color: "#ff4d4d" },
         { name: "Ciberseguridad", color: "rgba(255, 255, 255, 1)" }
-      ]
+      ],
+      icon: "github"
     },
     {
       title:"LEDBLELIB",
-      description: "Una libreria escrita en Python para poder controlar dispositivos Led BLE",
+      description: "Librería en Python para la comunicación y control de dispositivos LED mediante Bluetooth Low Energy (BLE), orientada a automatizar pruebas y prototipos. Ejemplos en el repositorio",
       url: "https://github.com/0xlibless/LEDBLELIB",
       tags: [
         { name: "Python", color: "#3776ab" }
-      ]
+      ],
+      icon: "github"
+    },
+    {
+      title: "IgForAnons",
+      description: "Herramienta para anonimizar la actividad en Instagram, permitiendo la visualizacion y la descarga de Historias. Función opcional de proxy",
+      url: "https://github.com/0xlibless/IgForAnons",
+      tags: [
+        { name: "Python", color: "#3776ab" },
+        { name: "OSINT", color: "#ff4d4d" },
+      ],
+      icon: "github"
     }
   ];
 
