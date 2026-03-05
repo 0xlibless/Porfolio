@@ -76,16 +76,25 @@ a {
 }
 
 .navbar ul li {
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
     cursor: pointer;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: inherit;
+    color: #fff;
     display: block;
+    font-family: 'Interphases Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar ul li a:hover {
+    color: #df99ff;
+    text-shadow: 0 0 10px rgba(223, 153, 255, 0.8);
+    transform: scale(1.05);
 }
 
 .intro {
@@ -162,4 +171,27 @@ a {
     padding: 0.4rem 1rem;
     border-radius: 9999px;
     font-weight: 600;
+}
+
+.contact {
+    /* margin-top: -32px; */
+    height: 120px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.contact a:hover {
+    color: #df99ff;
+    filter: drop-shadow(0 0 10px rgba(223, 153, 255, 0.8));
+    transform: scale(1.0);
 }

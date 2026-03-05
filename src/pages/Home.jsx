@@ -2,6 +2,7 @@ import Spline from '@splinetool/react-spline';
 import '../assets/Home.css';
 import Navbar from '../components/navbar';
 import ProjectCard from '../components/ProjectCard';
+import { Contact } from '../components/contact';
 
 export default function Home() {
   const projects = [
@@ -104,8 +105,9 @@ export default function Home() {
           </div>
       </section>
 
-      <section id="contacto" style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 2, backgroundColor: 'rgba(0,0,0,0.5)' }}>
-          <h2 className="scroll-animate" style={{ fontSize: '4rem' }}>Contacto</h2>
+      <section id="contacto" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 2, backgroundColor: 'rgba(0,0,0,0.5)', padding: '4rem 2rem' }}>
+          <h2 className="scroll-animate" style={{ fontSize: '4rem', marginBottom: '2rem' }}>Contacto</h2>
+          <Contact/>
       </section>
     </main>
   );
