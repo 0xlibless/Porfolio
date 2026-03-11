@@ -1,9 +1,14 @@
 const GITHUB_USERNAME = '0xlibless';
 
 export async function fetchGitHubStats() {
+  const year = new Date().getFullYear().toString();
   const [prsRes, contribRes] = await Promise.all([
     fetch(`https://api.github.com/search/issues?q=type:pr+author:${GITHUB_USERNAME}+is:merged&per_page=1`),
-    fetch(`https://github-contributions-api.jogruber.de/v4/${GITHUB_USERNAME}`)
+    fetch(`https://github-contributions-api.jogruber.de/v4/${GITHUB_USERNAME}?y=${year}`, {
+      headers: {
+        'cache-control': 'no-cache',
+      },
+    })
   ]);
 
   if (!prsRes.ok) throw new Error('Error al obtener PRs');
@@ -25,7 +30,6 @@ export async function fetchGitHubStats() {
     }
   }
 
-  const year = new Date().getFullYear().toString();
   const totalContribs = contribData.total?.[year] ?? 0;
 
   return {

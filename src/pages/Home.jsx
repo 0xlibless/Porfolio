@@ -132,21 +132,21 @@ export default function Home() {
       icon: "github"
     },
     {
-      title:"LEDBLELIB",
-      description: "Librería en Python para la comunicación y control de dispositivos LED mediante Bluetooth Low Energy (BLE), orientada a automatizar pruebas y prototipos. Ejemplos en el repositorio",
-      url: "https://github.com/0xlibless/LEDBLELIB",
-      tags: [
-        { name: "Python", color: "#3776ab" }
-      ],
-      icon: "github"
-    },
-    {
       title: "IgForAnons",
       description: "Herramienta para anonimizar la actividad en Instagram, permitiendo la visualizacion y la descarga de Historias. Función opcional de proxy",
       url: "https://github.com/0xlibless/IgForAnons",
       tags: [
         { name: "Python", color: "#3776ab" },
         { name: "OSINT", color: "#ff4d4d" },
+      ],
+      icon: "github"
+    },
+    {
+      title: "Snake Game",
+      description: "Clásico juego de la serpiente desarrollado en C++. Mis primeros pasos dentro del lenguaje",
+      url: "https://github.com/0xlibless/SnakeGame",
+      tags: [
+        { name: "C++", color: "#00599c" },
       ],
       icon: "github"
     }
