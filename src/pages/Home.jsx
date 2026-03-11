@@ -173,7 +173,10 @@ export default function Home() {
 
       <section id="sobre-mi" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 2, padding: '2rem' }}>
         <div className="scroll-animate glass glass-sobre-mi" style={{ padding: '2.4rem', maxWidth: '640px', textAlign: 'left', width:'120vh' }}>
-            <h2 style={{ fontFamily: 'Interphases Pro', fontSize: '2.4rem', marginBottom: '1.2rem', background: 'linear-gradient(90deg, #fff, #ccc)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Sobre mí</h2>
+            <div className="section-heading left">
+                <span className="section-tag">// ¿Quién soy?</span>
+                <h2 className="section-title">Sobre mí</h2>
+            </div>
             <div style={{ fontFamily: 'Interphases Pro', fontSize: '0.88rem', lineHeight: '1.6', color: '#e0e0e0', display: 'flex', flexDirection: 'column', gap: '0.96rem'}}>
                 <p>
                     Soy un joven apasionado por la tecnología. Desde chico exploré la computadora por mi cuenta, lo que me llevó a aprender de forma autodidacta programación, interfaces, terminales y sistemas operativos, especialmente <span className="text-neon">Linux</span>.
@@ -189,7 +192,10 @@ export default function Home() {
       </section>
 
       <section id="stack" style={{ minHeight: '35vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 2, padding: '3rem 0' }}>
-        <h2 className="scroll-animate" style={{ fontSize: '2.4rem', marginBottom: '2rem' }}>Stack</h2>
+        <div className="section-heading scroll-animate">
+          <span className="section-tag">// habilidades</span>
+          <h2 className="section-title">Stack</h2>
+        </div>
         <div className="scroll-animate carousel-wrapper"
           ref={carouselRef}
           onMouseDown={e => onDragStart(e.clientX)}
@@ -213,7 +219,10 @@ export default function Home() {
       </section>
 
       <section id="proyectos" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 2, padding: '3.2rem 1.6rem' }}>
-          <h2 className="scroll-animate" style={{ fontSize: '3.2rem', marginBottom: '2.4rem' }}>Proyectos</h2>
+          <div className="section-heading scroll-animate">
+            <span className="section-tag">// mi trabajo</span>
+            <h2 className="section-title">Proyectos</h2>
+          </div>
           <div className="projects-grid projects-grid-animate">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
@@ -250,7 +259,10 @@ export default function Home() {
       </section>
 
       <section id="contacto" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 2, padding: '3.2rem 1.6rem' }}>
-          <h2 className="scroll-animate" style={{ fontSize: '3.2rem', marginBottom: '1.6rem' }}>Contacto</h2>
+          <div className="section-heading scroll-animate">
+            <span className="section-tag">// hablemos</span>
+            <h2 className="section-title">Contacto</h2>
+          </div>
           <Contact/>
       </section>
 
