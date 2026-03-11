@@ -86,6 +86,7 @@ export default function Home() {
     { icon: <SiPython size={38} color="#3776ab" />, label: 'Python' },
     { icon: <SiJavascript size={38} color="#f7df1e" />, label: 'JavaScript' },
     { icon: <SiNodedotjs size={38} color="#339933" />, label: 'Node.js' },
+    { icon: <SiCplusplus size={38} color="#00599c" />, label: 'C++' },
     { icon: <SiReact size={38} color="#61dafb" />, label: 'React' },
     { icon: <SiReact size={38} color="#00b4d8" />, label: 'React Native' },
     { icon: <SiHtml5 size={38} color="#e34f26" />, label: 'HTML' },
