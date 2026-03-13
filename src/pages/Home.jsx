@@ -183,7 +183,7 @@ export default function Home() {
         </div>      
       </section>
 
-      <section id="stack" style={{ minHeight: '35vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 2, padding: '3rem 0' }}>
+      <section id="stack" className="stack-section">
         <div className="section-heading scroll-animate">
           <span className="section-tag">// habilidades</span>
           <h2 className="section-title">Stack</h2>
